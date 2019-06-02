@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const appRoutes: Routes = [
   { path: 'page-one', component: PageOneComponent },
   { path: 'page-two', component: PageTwoComponent },
+  { path: '', redirectTo: '/page-one', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
